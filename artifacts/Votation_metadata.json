@@ -1,0 +1,94 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "showResult",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "bolsonaro",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "lula",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "moro",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Votation.Result",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_candidate",
+						"type": "string"
+					}
+				],
+				"name": "vote",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"votation.sol": "Votation"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"votation.sol": {
+			"keccak256": "0x4ba61b0b7c277f3171e407dc277878321e2b13954992ff67453cafcf4181af38",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3b23bdd5971f04d330b43c8fb5417b5154a35bbcfa8768368d0b1977e9787ea7",
+				"dweb:/ipfs/Qmch4vffMWxtSVy3W4BzDAANPumry47Kud3oM6TA5pNpi6"
+			]
+		}
+	},
+	"version": 1
+}

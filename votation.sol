@@ -29,15 +29,10 @@ contract Votation {
         );
     }
 
-    function vote(string memory _candidate  ) public returns(string memory){
-        require(candidatesNames[_candidate]);
-        require(!usersVoted[msg.sender]);
+    function vote(string memory _candidate) public{
+        require(candidatesNames[_candidate], "candidate does not exist");
+        require(!usersVoted[msg.sender], "You have already voted");
         usersVoted[msg.sender] = true;
         result[_candidate] += 1;
-        return "voted";
     }
-
-
-
-
 }
